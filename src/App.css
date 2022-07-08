@@ -61,3 +61,39 @@ body{
   color: gray;
   opacity: 0.8;
 }
+
+.checkout{
+  background-color: white;
+  width: 800px;
+  padding: 20px;
+}
+
+.checkoutContainer{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.checkoutItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+table, th, td {
+  border: 1px solid;
+  padding: 5px;
+}
+
+table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+th{
+  padding-left:5px ;
+}
+table{
+  width: 100%;
+  text-align: center;
+
+}

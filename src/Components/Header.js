@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import Cart from "./Cart"
 import SearchIcon from '@mui/icons-material/Search';
+import { useNavigate } from 'react-router-dom';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -52,6 +53,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function SearchAppBar() {
+  const navigate=useNavigate()
   return (
     <Box sx={{ flexGrow: 1}}>
       <AppBar position="static" sx={{ height:80,display:"flex",justifyContent:"space-around"}}>
@@ -61,11 +63,12 @@ export default function SearchAppBar() {
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            onClick={()=>navigate("/")}
           >
             FakeMart
           </Typography>
           <Cart/>
-          <Search>
+          {/* <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -73,7 +76,7 @@ export default function SearchAppBar() {
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
-          </Search>
+          </Search> */}
         </Toolbar>
       </AppBar>
     </Box>
