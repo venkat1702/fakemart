@@ -25,7 +25,7 @@ function Checkout() {
               </tr>
             ))}
           </table>
-          <p style={{float:"right"}}>$ {total}</p>
+          <p style={{float:"right",fontSize:20}}>Total: <span style={{color:"#1976d2"}}> ${total}</span></p>
         </div>
       </div>
     </div>
